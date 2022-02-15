@@ -1,0 +1,52 @@
+@import 'variables';
+
+.testimonial {
+  border: $border;
+  border-radius: 5%;
+  box-shadow: 5px 5px 20px grey;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: $backgroundColorBorder;
+  overflow: hidden;
+  position: relative;
+
+  &__intro {
+    font-family: $myFont;
+    font-weight: $myFontWeight;
+    padding: 10%;
+    text-align: $myTextAlign;
+    line-height: 25px;
+  }
+
+  &__footer {
+    font-family: $myFont;
+    background-color: $colorFooter;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__outro {
+    padding-top: 50px;
+  }
+
+  &__name {
+    color: $nameColor;
+    text-align: $myTextAlign;
+    font-weight: $myFontWeight;
+    letter-spacing: 3px;
+    margin-bottom: -10px;
+  }
+
+  &__website {
+    text-align: $myTextAlign;
+    color: rgb(196, 176, 176);
+    font-weight: $myFontWeight;
+  }
+}
+
+

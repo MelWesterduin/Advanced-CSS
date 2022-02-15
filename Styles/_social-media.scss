@@ -1,0 +1,63 @@
+@import 'variables';
+
+@mixin social-nav {
+  font-family: $myFont;
+  width: $socialWidth;
+  animation-play-state: paused;
+  animation-duration: 2s;
+  padding: 5px 0 0 10px;
+  height: 40px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: flex-end;
+  
+
+  &__blog {
+    @include social-nav;
+    background-color: #e17b77;
+  }
+
+  &__twitter {
+    @include social-nav;
+    background-color: #00aced;
+  }
+
+  &__linkedin {
+    @include social-nav;
+    background-color: #007bb6;
+  }
+
+  &__facebook {
+    @include social-nav;
+    background-color: #3b5998;
+  }
+
+  &__github {
+    @include social-nav;
+    background-color: #333;
+  }
+}
+
+#text {
+  color: white;
+  display: none;
+}
+
+li:hover  {
+  animation-name: social;
+  animation-play-state: running;
+}
+
+@keyframes social {
+  from {
+    width: 45px;
+  }
+  to {
+    width: 300px;
+    display: inline;
+  }
+}
